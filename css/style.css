@@ -138,3 +138,101 @@ body{
 .calc__head-item input:focus-visible{
     outline: none;
 }
+.calc__main{
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+    border: 1px solid #777777;
+}
+.globe__calc{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 7px 10px 7px 0;
+}
+.globe__icon{
+    width: 42px;
+    height: 42px;
+    /* margin-right: 13px; */
+}
+.select__calc{
+    margin-left: 13px;
+    position: relative;
+}
+#calc-select{
+    padding: 16px 39px 16px 17px;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    font-size: 20px;
+    border:none;
+    font-family: Arial;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+}
+#calc-select:focus-visible{
+    outline: none;
+}
+.select__icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 26px;
+    height: 100%;
+    background-color: #A9A9A9;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+.calc__main--box{
+    display: flex;
+}
+.calc__block{
+    text-align: center;
+    font-size: 20px;
+    /* position: relative; */
+}
+.calc__block-title{
+    margin-left: 35px;
+    color: #444444;
+}
+.calc__block-input input{
+    padding: 12px 17px;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    border: none;
+}
+.calc__block-input input:focus-visible{
+    outline: none;
+}
+.calc__block-input:not(:last-child){
+    margin-bottom: 5px; 
+}
+.m_btn__style{
+    width: 58px;
+    height: 60px;
+    background-color: #C9F1FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #777777;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
