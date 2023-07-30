@@ -124,6 +124,7 @@ body{
 }
 
 .calc__head-item input{
+    padding: 11px 22px;
     font-size: 20px;
     width: 110px;
     height: 41px;
@@ -763,15 +764,7 @@ input:focus-visible,select:focus-visible{
     border:none;
     margin-top: 14px;
 }
-.show{
-    transform: unset;
-    -webkit-transform: unset;
-    -moz-transform: unset;
-    -ms-transform: unset;
-    -o-transform: unset;
-    opacity: 1;
-    z-index: 0;
-}
+
 .calc__section_item{
     display: none;
     height: 408px;
@@ -826,6 +819,57 @@ input:focus-visible,select:focus-visible{
 }
 .section__description:not(:last-child){
     margin-bottom: 15px;
+}
+
+.calc__last_section--container{
+    display: none;
+}
+.calc__last_section{
+    background-color: #BBC6B5;
+    border:1px solid #777777;
+    padding: 3px;
+    width: 320px;
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.calc__last_section table{
+    width: 100%;
+}
+.calc__last_section table,th,td{
+    border:1px solid #777777;
+    border-collapse: collapse;
+}
+thead th{
+    width: 100%;
+    background-color: #dddddd;
+    font-weight: normal;
+}
+#first__table tbody tr td:first-child{
+    width: 70%;
+}
+#second__table tbody tr td:first-child{
+    width: 90%;
+}
+th,td{
+    padding: 5px;
+
+}
+tbody tr{
+    background-color: #fff;
+}
+tbody tr:nth-child(2n){
+    background-color: #f6f6f6;
+}
+.show{
+    transform: unset;
+    -webkit-transform: unset;
+    -moz-transform: unset;
+    -ms-transform: unset;
+    -o-transform: unset;
+    opacity: 1;
+    z-index: 0;
 }
 .active{
     display: block;
