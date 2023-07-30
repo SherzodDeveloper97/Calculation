@@ -772,3 +772,61 @@ input:focus-visible,select:focus-visible{
     opacity: 1;
     z-index: 0;
 }
+.calc__section_item{
+    display: none;
+    height: 408px;
+    background-color: #C5CCC1;
+    border:1px solid #777777;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 20px;
+    text-align: center;
+    padding: 24px 7px 16px 7px;
+}
+.section--input-group{
+    margin-top: 25px;
+}
+.section--input-group input{
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    height: 40px;
+    text-align: center;
+}
+.section--input-group input:first-child{
+    width: 70px;
+}
+.section--input-group input:nth-child(2){
+    width: 82px;
+}
+.section--input-group input:nth-child(3){
+    width: 70px;
+    border-radius:16px;
+    -webkit-border-radius:16px;
+    -moz-border-radius:16px;
+    -ms-border-radius:16px;
+    -o-border-radius:16px;
+}
+.section--input-group input:last-child{
+    width: 96px;
+}
+.section__description--box{
+    margin-top: 22px;
+}
+.section__description{
+    display: flex;
+    justify-content: center;
+}
+.section__description span{
+    margin-right: 16px;
+}
+.section__description:not(:last-child){
+    margin-bottom: 15px;
+}
+.active{
+    display: block;
+}
