@@ -367,16 +367,17 @@ body{
 }
 .calc__foot{
     display: flex;
-}
-.calc__foot--first-column{
-    width: 75px;
-    border: 1px solid #777777;
+    border:1px solid #777777;
     border-radius:3px;
     -webkit-border-radius:3px;
     -moz-border-radius:3px;
     -ms-border-radius:3px;
     -o-border-radius:3px;
-    border-right: 0;
+    /* border-left: 0; */
+    border-top: 0;
+}
+.calc__foot--first-column{
+    width: 75px;
 }
 .equal_to-btn{
     margin-top: 4px;
@@ -420,14 +421,8 @@ body{
     -o-border-radius:5px;
 }
 .calc__foot--second-column{
-    border:1px solid #777777;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    -ms-border-radius:3px;
-    -o-border-radius:3px;
+    
     color: rgba(0, 0, 0, 0.8);
-    border-left: 0;
     padding: 4px 10px 7px 7px;
 }
 .calc__foot--block{
