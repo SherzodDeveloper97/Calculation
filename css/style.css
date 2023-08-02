@@ -123,12 +123,12 @@ body{
 }
 .calc__text{
     color: #444444;
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .calc__head-item input{
     padding: 11px 22px;
-    font-size: 20px;
+    font-size: 1.25em;
     width: 110px;
     height: 41px;
     border:none;
@@ -174,7 +174,7 @@ body{
     -moz-border-radius:5px;
     -ms-border-radius:5px;
     -o-border-radius:5px;
-    font-size: 20px;
+    font-size: 1.25em;
     border:none;
     font-family: Arial;
     appearance: none;
@@ -230,7 +230,7 @@ body{
 .calc__block{
     margin: 0 74px 0 68px;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.25em;
     /* position: relative; */
 }
 .calc__block-title{
@@ -458,7 +458,7 @@ body{
     margin-bottom: 10px;
 }
 .calc__foot--second-column .calc__number_group:not(:last-child){
-    margin-right: 11px;
+    margin-right: 16px;
 }
 .calc__other_btn-group{
 
@@ -489,10 +489,10 @@ body{
     display: flex;
 }
 .calc__last_btn--group button:not(:last-child){
-    margin-right: 10px;
+    margin-right: 16px;
 }
 .calc__last_btn--group button:nth-child(2){
-    margin-right: 11px;
+    margin-right: 16px;
 }
 .calc__last_btn{
     width: 127px;
@@ -866,4 +866,42 @@ tbody tr:nth-child(2n){
     display: block;
     z-index: 2;
 }
-
+@media (max-width:1368px) and (min-width:768px) {
+    .calc__container{
+        height: 100vh;
+    }
+    #calc-select{
+        padding: 12px 39px 12px 17px;
+        font-size: 1.25em;
+    }
+    #calc__main--box-second{
+        margin-top: 6px;
+    }
+    .arrow__btn_right img,.arrow__btn_left img{
+        width: 50px;
+    }
+    .m_btn__style{
+        width: 50px;
+        height: 50px;
+    }
+    .m_three__btn{
+        transform: translateY(38px);
+        -webkit-transform: translateY(38px);
+        -moz-transform: translateY(38px);
+        -ms-transform: translateY(38px);
+        -o-transform: translateY(38px);
+    }
+    .ruler_btn,.size__compilation{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ruler_btn img{
+        height: 30px;
+    }
+    .size__compilation img{
+        height: 26px;
+    }
+}
