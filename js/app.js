@@ -12,7 +12,7 @@ const openThirdBox = document.querySelector(".calc__last_section--container");
 
 // Events:
 clickBtn.addEventListener("click", () => {
-    openBox.classList.toggle("show");
+    openBox.classList.toggle("active");
     if(openSecondBox.classList.contains("active")){
         openSecondBox.classList.remove("active");
     };

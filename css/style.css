@@ -11,6 +11,7 @@
 
 body{
     font-family: Arial;
+    background-color: #C5CCC1;
 }
 
 .calc__container{
@@ -21,7 +22,7 @@ body{
 }
 
 .calc__item{
-    
+    border:1px solid #777;
 }
 
 .collapse__box{
@@ -40,6 +41,7 @@ body{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     position: relative;
+    border:1px solid #777777;
 }
 
 .collapse__line{
@@ -78,6 +80,7 @@ body{
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
     padding: 10px;
+    border:1px solid #9f9e9e;
 }
 
 .connection__item{
@@ -153,7 +156,7 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 7px 10px 7px 0;
+    padding: 12px 10px 7px 0;
 }
 .globe__icon{
     width: 42px;
@@ -233,6 +236,12 @@ body{
 .calc__block-title{
     margin-left: 35px;
     color: #444444;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.011em;
+
 }
 .calc__block-input input{
     width: 177px;
@@ -258,7 +267,7 @@ body{
     /* margin-right: 10px;
     margin-top: 28px; */
     position: absolute;
-    top: 28px;
+    top: 30px;
     right: 10px;
 }
 #calc__main--box-second .m_btn__group{
@@ -284,11 +293,11 @@ body{
     margin-bottom: 20px;
 }
 .m_three__btn{
-    transform: translateY(26px);
-    -webkit-transform: translateY(26px);
-    -moz-transform: translateY(26px);
-    -ms-transform: translateY(26px);
-    -o-transform: translateY(26px);
+    transform: translateY(28px);
+    -webkit-transform: translateY(28px);
+    -moz-transform: translateY(28px);
+    -ms-transform: translateY(28px);
+    -o-transform: translateY(28px);
 }
 .calc__main--size-container{
     display: flex;
@@ -398,7 +407,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px 0 8px 0;
+    padding: 11px 0 8px 0;
 }
 .plus__btn{
     margin-bottom: 10px;
@@ -421,9 +430,8 @@ body{
     -o-border-radius:5px;
 }
 .calc__foot--second-column{
-    
     color: rgba(0, 0, 0, 0.8);
-    padding: 4px 10px 7px 7px;
+    padding: 4px 10px 7px 0px;
 }
 .calc__foot--block{
     display: flex;
@@ -444,6 +452,7 @@ body{
     -o-border-radius: 5px;
     font-size: 20px;
     color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
 }
 .calc__number_btn:not(:last-child){
     margin-bottom: 10px;
@@ -505,9 +514,7 @@ button,.arrow__blocks img,.m_btn__style,.ruler_btn, .size__compilation,.connecti
     cursor: pointer;
 }
 .add_calc--box{
-    transform: translateX(100%);
-    opacity: 0;
-    z-index: -3;
+    display: none;
     transition: all 0.25s ease;
     border:1px solid #777777;
     border-radius:3px;
@@ -516,10 +523,6 @@ button,.arrow__blocks img,.m_btn__style,.ruler_btn, .size__compilation,.connecti
     -ms-border-radius:3px;
     -o-border-radius:3px;
     background-color: #C5CCC1;
-    -webkit-transform: translateX(100%);
-    -moz-transform: translateX(100%);
-    -ms-transform: translateX(100%);
-    -o-transform: translateX(100%);
     -webkit-transition: all 0.25s ease;
     -moz-transition: all 0.25s ease;
     -ms-transition: all 0.25s ease;
@@ -744,7 +747,9 @@ input:focus-visible,select:focus-visible{
     margin-top: 8px;
 }
 .add_calc--other_btns button{
-    padding: 15px 20px;
+    /* padding: 15px 20px; */
+    height: 45px;
+    width: 89px;
     border:1px solid #777777;
     background-color: #EDEDED;
     border-radius:5px;
@@ -857,15 +862,8 @@ tbody tr{
 tbody tr:nth-child(2n){
     background-color: #f6f6f6;
 }
-.show{
-    transform: unset;
-    -webkit-transform: unset;
-    -moz-transform: unset;
-    -ms-transform: unset;
-    -o-transform: unset;
-    opacity: 1;
-    z-index: 0;
-}
 .active{
     display: block;
+    z-index: 2;
 }
+
