@@ -432,6 +432,7 @@ body{
 .calc__foot--second-column{
     color: rgba(0, 0, 0, 0.8);
     padding: 4px 10px 7px 0px;
+    margin-left: 8px;
 }
 .calc__foot--block{
     display: flex;
@@ -495,7 +496,7 @@ body{
     margin-right: 16px;
 }
 .calc__last_btn{
-    width: 127px;
+    width: 132px;
     height: 50px;
     display: flex;
     justify-content: center;
@@ -823,6 +824,7 @@ input:focus-visible,select:focus-visible{
 
 .calc__last_section--container{
     display: none;
+    border:1px solid #777777;
 }
 .calc__last_section{
     background-color: #BBC6B5;
@@ -865,6 +867,7 @@ tbody tr:nth-child(2n){
 .active{
     display: block;
     z-index: 2;
+    height: auto;
 }
 @media (max-width:1368px) and (min-width:768px) {
     .calc__container{
