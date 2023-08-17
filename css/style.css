@@ -102,7 +102,7 @@ body{
 }
 
 .calc__boxes{
-    
+    width: 375px;
 }
 
 .calc__box{
@@ -515,6 +515,7 @@ button,.arrow__blocks img,.m_btn__style,.ruler_btn, .size__compilation,.connecti
     cursor: pointer;
 }
 .add_calc--box{
+    width: 375px;
     display: none;
     transition: all 0.25s ease;
     border:1px solid #777777;
